@@ -22,12 +22,13 @@ body{
     color : blue;
 }
 #Pseudo{
-    display:grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 5px;
-    padding-top: 5px;
+    transition: padding-top 2s ease-in-out;
 }
-.button{
+#Pseudo:hover{
+    border: 1px solid black;
+    padding-top: 200px;
+}
+#Pseudo .button{
     border: 1px solid black;
 }
 
@@ -35,6 +36,9 @@ body{
     border-radius: 5px;
     box-shadow: -2px 2px 3px black;
     cursor: pointer;
+    color:azure;
+    transition: background-color .2s ease,
+    color .1s ease-out, border-radius 2s;
 }
 .button:active{
     border-radius: 30px;
@@ -48,6 +52,7 @@ body{
 
 .button:hover{
     background-color: aquamarine;
+    color: black;
 
 }
 
